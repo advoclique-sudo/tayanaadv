@@ -550,5 +550,19 @@ section{padding:clamp(48px,6.5vw,80px) 0}
   if (ano) ano.textContent = new Date().getFullYear();
 })();
 </script>
+<!-- Google Ads: conversao Contato no clique do WhatsApp -->
+<script>
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event','conversion',{
+        'send_to':'AW-18561407375/dN_MCJDu7bUdEI-z4pJF',
+        'value':1.0,
+        'currency':'BRL',
+        'transport_type':'beacon'
+      });
+    }
+  });
+</script>
 </body>
 </html>
